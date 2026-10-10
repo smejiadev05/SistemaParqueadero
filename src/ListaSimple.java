@@ -1,7 +1,7 @@
 public class ListaSimple<T> {
 
-    private Nodo head;
-    private Nodo tail;
+    private Nodo<T> head;
+    private Nodo<T> tail;
     private int size;
 
     public ListaSimple(){
@@ -22,7 +22,7 @@ public class ListaSimple<T> {
         return size==0;
     }
 
-    public Nodo first(){
+    public Nodo<T> first(){
         return this.head;
     }
 
