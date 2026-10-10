@@ -15,7 +15,7 @@ public class Pila<T> {
 
     public T top() {
         if (this.lista.first() != null){
-            return (T) this.lista.first().getData();
+            return this.lista.first().getData();
         } else{
             System.out.println("No se encontró información de este vehiculo.");
             return null;

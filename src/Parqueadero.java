@@ -2,7 +2,7 @@ public class Parqueadero {
 
     private int capacidadMaxima;
     private Pila<Vehiculo> parqueadero;
-    Private Cola<Vehiculo> colaEspera;
+    private Cola<Vehiculo> colaEspera;
 
     public Parqueadero(int capacidadMaxima){
         this.capacidadMaxima = capacidadMaxima;
@@ -23,7 +23,7 @@ public class Parqueadero {
         }
     }
 
-    Public void salirVehiculo(String placa){
+    public void salirVehiculo(String placa){
         placa = placa.toUpperCase();
 
         if(!contieneVehiculo(placa)){
@@ -33,7 +33,7 @@ public class Parqueadero {
         Pila<Vehiculo>pilaAuxiliar = new Pila<>();
         int movimientos = 0;
 
-        while (!parqueadero.isEmpty() && !parqueadero.peek().get.placa().equalsIgnoreCase(placa)){
+        while (!parqueadero.isEmpty() && !parqueadero.top().getPlaca().equalsIgnoreCase(placa)){
             pilaAuxiliar.push(parqueadero.pop());
             movimientos++;
         }

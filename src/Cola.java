@@ -5,14 +5,18 @@ public class Cola<T> {
         this.lista = new ListaSimple<>();
     }
     public void  enqueue(T data){
-        lista.addFirst(data);
+        lista.addLast(data);
     }
     public T dequeue(){
         return lista.removeFirst();
     }
-    public T peek(){
-        return (lista.first() !=null) ? lista.first().getData() : null;
-
+    public T top() {
+        if (this.lista.first() != null){
+            return this.lista.first().getData();
+        } else{
+            System.out.println("No se encontró información de este vehiculo.");
+            return null;
+        }
     }
     public boolean isEmpty(){
         return lista.isEmpty();
