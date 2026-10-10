@@ -16,7 +16,7 @@ public class Nodo <T>{
 
     //getters y setters
     public T getData() {
-        return data;
+        return this.data;
     }
 
     public void setData(T data) {
