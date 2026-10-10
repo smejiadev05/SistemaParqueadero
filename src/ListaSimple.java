@@ -34,8 +34,8 @@ public class ListaSimple<T> {
         Nodo<T> n = new Nodo<>(data);
 
         if (isEmpty()){
-            n = this.head;
-            n = this.tail;
+            this.head = n;
+            this.tail = n;
         } else {
             n.setNext(this.head);
             this.head = n;
@@ -47,8 +47,8 @@ public class ListaSimple<T> {
         Nodo<T> n = new Nodo<>(data);
 
         if (isEmpty()){
-            n = this.head;
-            n = this.tail;
+            this.head = n;
+            this.tail = n;
         } else {
             this.tail.setNext(n);
             this.tail = n;
