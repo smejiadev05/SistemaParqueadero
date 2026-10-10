@@ -44,6 +44,11 @@ public class Parqueadero {
             System.out.println("-> se movieron temporalmente " + movimientos + " vehiculo.");
 
         }
+        while (!pilaAuxiliar.isEmpty()){
+            parqueadero.push(pilaAuxiliar.pop());
+
+        }
+        verificarColaEspera();
     }
 
 }
